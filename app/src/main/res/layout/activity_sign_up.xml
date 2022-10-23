@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity"
+    android:background="#FFA500" >
+
+
+
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Welcome Back"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="100dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/editUserName"
+        android:layout_below="@id/textViewWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:textColorHint="@color/black"
+        android:layout_centerHorizontal="true"
+        android:ems="15"
+        />
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textColorHint="@color/black"
+        android:layout_below="@id/editUserName"
+        android:layout_centerHorizontal="true"
+        android:ems="15"
+        android:layout_marginTop="15dp"
+
+        />
+
+    <EditText
+        android:id="@+id/editComfirmPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Password"
+        android:textColorHint="@color/black"
+        android:layout_below="@id/editPassword"
+        android:layout_centerHorizontal="true"
+        android:ems="15"
+        android:layout_marginTop="15dp"
+
+        />
+
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editComfirmPassword"
+        android:layout_centerHorizontal="true"
+        android:text="Register"
+        app:backgroundTint="@color/black"
+        android:layout_marginTop="60dp"
+        android:textSize="18dp"/>
+
+    <TextView
+        android:id="@+id/textViewNoAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/buttonRegister"
+        android:text="Already have a account"
+        android:textColor="@color/black"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/textViewSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textViewNoAccount"
+        android:text="Sign In"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:background="#33FF99">
+
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Welcome"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="100dp"
+        />
+
+    <TextView
+        android:id="@+id/textViewPizza4u"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textViewWelcome"
+        android:text="Pizza 4u"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/txtIntro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textViewPizza4u"
+        android:text="Join us to make your own pizza and get it at your door step  "
+        android:textSize="20dp"
+        android:layout_marginTop="40dp"
+        android:textColor="@color/black"
+        android:padding="50dp"/>
+
+    <Button
+        android:id="@+id/btnSignIn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtIntro"
+        android:layout_centerHorizontal="true"
+        android:text="Sign In"
+        app:backgroundTint="@color/black"
+
+
+        android:textSize="18dp"
+        android:layout_marginTop="60dp"
+        />
+    <Button
+        android:id="@+id/btnSingUp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSignIn"
+        android:layout_centerHorizontal="true"
+        android:text="Sign Up"
+        app:backgroundTint="@color/black"
+        android:textSize="18dp"
+        android:layout_marginTop="10dp"
+        />
+
+
+
+
+</RelativeLayout>
